@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1"/>
+<title>Login</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Leandro development</title>
+	<meta name ="description" content=" Leandro development em busca do conhecimento "/>
+	<meta name="keywords" content="em busca do script perfeito"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="author" content=" Leandro Almeida"/>
+	<link href="css/projetos.css" rel="stylesheet"/>
+	<link href="css/reset.css" rel="stylesheet"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<!-- com esse viewport eu impesso o zoom no smart-phone-->
+	<link href="https://fonts.googleapis.com/css?family=Shojumaru" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet"/>
+</head>
+
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+	<div class="formularioLogin">
+	<form th:action="@{/testando}" method="post">
+		<div class="grupo1">
+            <label for="login">Login:</label>
+            <input id="login" name="login" type="text" placeholder="login" class="campo" th:value="${login}"/>
+        </div>  
+        <div class="grupo">
+            <label for="senha">Senha:</label>
+            <input id="senha" name="senha" type="password" placeholder="senha" class="campo campo-medio" th:value="${senha}"/>
+        </div>
+
+        <br/>
+        <h1 th:text="${mensagemError}">xxxxxxxxxxxx</h1>
+        <br/>
+        
+        <button id="adicionar-paciente" class="botao bto-principal" th:href="@{/testando}">logar</button>
+	</form>
+	</div>
+		
+</body>
+</html>
