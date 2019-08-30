@@ -52,10 +52,9 @@
 	</dependency>
 	
 	<dependency>
-		<groupId>mysql</groupId><!-- CONFIGURANDO AS DEPENDENCIAS DO SPRING BOOT PARA CONECTAMOS NOSSO BANCO DE DADOS -->
-		<artifactId>mysql-connector-java</artifactId>
-		<version>5.1.40</version>
-	</dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+    </dependency> 
 		
 		
 		
